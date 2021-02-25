@@ -81,7 +81,7 @@ model: 'NS' for Dynamic Nelson-Siegel model  or 'S' for Dynamic Nelson-Siegel-Sv
 
         kalman(param = param,Y = df, lik = lik, frct = frct, ahead = ahead, mty = mty, model = model)
 
-which gives the following output:
+which gives the following output
 
 .. code-block:: python
 
