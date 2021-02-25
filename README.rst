@@ -40,7 +40,7 @@ the betas averages (mu), and
 
 the cholesky deconposition of the VAR(1) estimated innovations covariance matrix (Q)
 
-)];
+]);
 
 Y: pandas data frame;
 
