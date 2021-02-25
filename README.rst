@@ -52,7 +52,7 @@ ahead: months (years) ahead forecasts;
 
 mty: Maturities in months (years);
 
-model: Dynamic Nelson-Siegel ('NS') or Dynamic Nelson-Siegel-Svensson ('S');
+model: 'NS' for Dynamic Nelson-Siegel model  or 'S' for Dynamic Nelson-Siegel-Svensson model;
 
 .. code-block:: python
 
