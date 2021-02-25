@@ -1,6 +1,6 @@
-============================
-Nelson-Siegel-Svensson Model
-============================
+=====================================
+Dynamic-Nelson-Siegel-Svensson Models
+=====================================
 
 
 .. image:: https://img.shields.io/pypi/v/Dynamic_Nelson_Siegel_Svensson_Kalman_Filter.svg
@@ -16,8 +16,8 @@ Implementation of the Dynamic-Nelson-Siegel-Svensson models with Kalman filter i
 Features
 --------
 
-* Python implementation of the Dynamic-Nelson-Siegel curve (three factors) with Kalman filter
-* Python implementation of the Dynamic-Nelson-Siegel-Svensson curve (four factors) with Kalman filter
+* Python implementation of the Dynamic Nelson-Siegel curve (three factors) with Kalman filter
+* Python implementation of the Dynamic Nelson-Siegel-Svensson curve (four factors) with Kalman filter
 * Forecasting the yield curve is availabe
 * Loglikelihood is availabe in order to optimize.minimize the function
 
@@ -29,17 +29,26 @@ In order to fitting the yield curve we must set
 param: initial parameters vector of Dynamic-Nelson-Siegel models obtained by OLS in the two-step approach.
 ([
 The log of lambdas,
+
 the square root of sample covariance diagonal matrix of VAR(1) residuals (H),
+
 the VAR(1) matrix (phi),
+
 the betas averages (mu), and
+
 the cholesky deconposition of the VAR(1) estimated innovations covariance matrix (Q)
 )];
 
 Y: pandas data frame;
+
 lik: Loglikelihood;
+
 frct: Forecasts;
+
 ahead: months (years) ahead forecasts;
+
 mty: Maturities in months (years);
+
 model: Dynamic Nelson-Siegel ('NS') or Dynamic Nelson-Siegel-Svensson ('S');
 
 .. code-block:: python
@@ -92,11 +101,17 @@ Forecasting the Dynamic-Nelson-Siegel
 which returns (a_tt,a_t,P_tt,P_t,v2,v1,Yf)
 
 a_tt: the a posteriori state estimate,
+
 a_t: the a priori state estimate,
+
 P_tt: the a posteriori estimate covariance matrix,
+
 P_t: the a posteriori estimate covariance matrix,
+
 v2: filtered yields,
+
 v1: filtered erros, and
+
 Yf: forecasts.
         
 Fitting and Forecasting the Dynamic-Nelson-Siegel-Svensson
