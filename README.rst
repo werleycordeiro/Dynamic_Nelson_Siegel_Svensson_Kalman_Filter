@@ -19,7 +19,7 @@ Features
 * Python implementation of the Dynamic Nelson-Siegel curve (three factors) with Kalman filter
 * Python implementation of the Dynamic Nelson-Siegel-Svensson curve (four factors) with Kalman filter
 * Forecasting the yield curve is availabe
-* Loglikelihood is availabe in order to optimize.minimize the function
+* Log-likelihood is availabe in order to optimize.minimize the function
 
 Fitting the Dynamic-Nelson-Siegel
 ---------------------------------
@@ -44,7 +44,7 @@ the cholesky deconposition of the VAR(1) estimated innovations covariance matrix
 
 Y: pandas data frame;
 
-lik: Loglikelihood;
+lik: Log-likelihood;
 
 frct: Forecasts;
 
