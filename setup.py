@@ -45,7 +45,7 @@ setup(
     #test_suite='tests',
     #tests_require=test_requirements,
     url='https://github.com/werleycordeiro/Dynamic_Nelson_Siegel_Svensson_Kalman_Filter',
-    #download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
+    download_url = 'https://github.com/werleycordeiro/Dynamic_Nelson_Siegel_Svensson_Kalman_Filter/archive/v_0.1.0.tar.gz',
     version='0.1.0',
     zip_safe=False,
 )
