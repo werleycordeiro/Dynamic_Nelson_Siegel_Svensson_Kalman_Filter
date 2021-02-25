@@ -144,9 +144,8 @@ optimize.minimize
 .. code-block:: console
 
         from scipy import optimize
-        
-        optimize.minimize(fun = kalman, x0 = param, args = (df,lik,frct,ahead,mty,model),
-        method = 'L-BFGS-B', bounds = None, options={'disp':True})
+
+        optimize.minimize(fun = kalman, x0 = param, args = (df,lik,frct,ahead,mty,model),method = 'L-BFGS-B', bounds = None,options={'disp':True})
 
 which gives the following output for the Dynamic-Nelson-Siegel model
 
