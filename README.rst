@@ -24,10 +24,12 @@ Features
 Fitting the Dynamic-Nelson-Siegel
 ---------------------------------
 
-In order to fitting the yield curve we must set
+In order to fitting the yield curve we must set (param,Y,lik,frct,ahead,mty,model)
 
-param: initial parameters vector of Dynamic-Nelson-Siegel models obtained by OLS in the two-step approach.
+param: initial parameters vector of Dynamic-Nelson-Siegel models obtained by OLS in the two-step approach = 
+
 ([
+
 The log of lambdas,
 
 the square root of sample covariance diagonal matrix of VAR(1) residuals (H),
@@ -37,6 +39,7 @@ the VAR(1) matrix (phi),
 the betas averages (mu), and
 
 the cholesky deconposition of the VAR(1) estimated innovations covariance matrix (Q)
+
 )];
 
 Y: pandas data frame;
