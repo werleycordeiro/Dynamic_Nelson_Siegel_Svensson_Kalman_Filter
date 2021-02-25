@@ -44,13 +44,13 @@ the cholesky deconposition of the VAR(1) estimated innovations covariance matrix
 
 Y: pandas data frame;
 
-lik: Log-likelihood;
+lik: log-likelihood;
 
-frct: Forecasts;
+frct: forecasts;
 
 ahead: months (years) ahead forecasts;
 
-mty: Maturities in months (years);
+mty: maturities in months (years);
 
 model: 'NS' for Dynamic Nelson-Siegel model  or 'S' for Dynamic Nelson-Siegel-Svensson model;
 
