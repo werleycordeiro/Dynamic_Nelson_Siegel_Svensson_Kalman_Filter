@@ -38,7 +38,7 @@ the VAR(1) matrix (phi),
 
 the betas averages (mu), and
 
-the cholesky deconposition of the VAR(1) estimated innovations covariance matrix (Q)
+the cholesky decomposition of the VAR(1) estimated innovations covariance matrix (Q)
 
 ]);
 

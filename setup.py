@@ -38,7 +38,7 @@ setup(
     license='MIT license',
     long_description=readme + '\n\n' + history,
     #include_package_data=True,
-    keywords='Dynamic_Nelson_Siegel_Svensson_Kalman_Filter',
+    keywords='Nelson-Siegel Kalman',
     name='Dynamic_Nelson_Siegel_Svensson_Kalman_Filter',
     packages=find_packages(include=['Dynamic_Nelson_Siegel_Svensson_Kalman_Filter']),
     #setup_requires=setup_requirements,
