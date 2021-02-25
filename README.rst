@@ -7,7 +7,7 @@ Dynamic-Nelson-Siegel-Svensson Models
         :target: https://pypi.python.org/pypi/Dynamic_Nelson_Siegel_Svensson_Kalman_Filter
 
 
-Implementation of the Dynamic-Nelson-Siegel-Svensson models with Kalman filter in Python.
+This package implements the Dynamic Nelson-Siegel-Svensson models with Kalman filter in Python.
 
 * Free software: MIT license
 * Python 3.7 or later supported
@@ -18,13 +18,13 @@ Features
 
 * Python implementation of the Dynamic Nelson-Siegel curve (three factors) with Kalman filter
 * Python implementation of the Dynamic Nelson-Siegel-Svensson curve (four factors) with Kalman filter
-* Forecasting the yield curve is availabe
-* Log-likelihood is availabe in order to optimize.minimize the function
+* Forecasting the yield curve is available
+* Log-likelihood is available to use optimize.minimize
 
 Fitting the Dynamic-Nelson-Siegel
 ---------------------------------
 
-In order to fitting the yield curve we must set (param,Y,lik,frct,ahead,mty,model)
+To fitting the yield curve, we must set (param,Y,lik,frct,ahead,mty,model)
 
 param: initial parameters vector of Dynamic-Nelson-Siegel models obtained by OLS in the two-step approach = 
 
@@ -52,7 +52,7 @@ ahead: months (years) ahead forecasts;
 
 mty: maturities in months (years);
 
-model: 'NS' for Dynamic Nelson-Siegel model  or 'S' for Dynamic Nelson-Siegel-Svensson model;
+model: 'NS' for the Dynamic Nelson-Siegel model  or 'S' for the Dynamic Nelson-Siegel-Svensson model;
 
 .. code-block:: python
 
@@ -66,7 +66,7 @@ model: 'NS' for Dynamic Nelson-Siegel model  or 'S' for Dynamic Nelson-Siegel-Sv
         frct = False
         ahead = 0
         lik = True
-        mty =  np.array([3,6,9,12,15,18,21,24,30,36,48,60,72,84,96,108,120])
+        mty =  np.array([3,6,9,12,15,18,21,24,30,36,48,60,72,84,96,108,120]) # maturities in months
         model = 'NS'
 
         param = np.array([-2.798522, # log of 0.0609
@@ -91,7 +91,7 @@ which gives the following output
 Forecasting the Dynamic-Nelson-Siegel 
 -------------------------------------
 
-`kalman` also provides forecasts. We set 12 months ahead and we define param, Y, mty, and model as above. 
+Kalman function also provides forecasts. We set 12 months ahead, and we define param, Y, mty, and model as above. 
 
 .. code-block:: console
 
@@ -120,7 +120,7 @@ Yf: forecasts.
 Fitting and Forecasting the Dynamic-Nelson-Siegel-Svensson
 ----------------------------------------------------------
 
-We can replicate the steps above but using the following initial parameters
+We can replicate the steps above but using the following initial parameters.
 
 .. code-block:: console
 
@@ -147,7 +147,7 @@ optimize.minimize
         optimize.minimize(fun = kalman, x0 = param, args = (df,lik,frct,ahead,mty,model),
         method = 'L-BFGS-B', bounds = None, options={'disp':True})
 
-which gives the following output for Dynamic-Nelson-Siegel model
+which gives the following output for the Dynamic-Nelson-Siegel model
 
 .. code-block:: console
 
